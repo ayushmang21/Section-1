@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Ticket Booking</title>
+
+    <style>
+        form {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1 style="text-align: center;">Book Your Movie Tickets</h1>
+    <br>
+    <hr>
+    <h1 style="text-align: center; text-decoration: underline; font-style: italic; color: rgb(255, 0, 0); font-size: 50px;">Book Your Movie Tickets</h1>
     <hr>
     <form>
         <br>
@@ -33,11 +48,11 @@
         <br>
         <label>Theater</label>
         <select required>
-        <option></option>
-        <option>PVR - LuLu Mall</option>
-        <option>PVR - Saharaganj Mall</option>
-        <option>INOX - Phoenix Palassio Mall</option>
-        <option>INOX - Crown Mall</option>
+            <option></option>
+            <option>PVR - LuLu Mall</option>
+            <option>PVR - Saharaganj Mall</option>
+            <option>INOX - Phoenix Palassio Mall</option>
+            <option>INOX - Crown Mall</option>
         </select>
         <br>
         <br>
@@ -62,6 +77,21 @@
         <input type="range" min="1" max="10" required>
         <br>
         <br>
+        <label>How Many Seats ?</label>
+        <br>
+        <br>
+        <input type="radio" name="Seats">1
+        <input type="radio" name="Seats">2
+        <input type="radio" name="Seats">3
+        <input type="radio" name="Seats">4
+        <input type="radio" name="Seats">5
+        <input type="radio" name="Seats">6
+        <input type="radio" name="Seats">7
+        <input type="radio" name="Seats">8
+        <input type="radio" name="Seats">9
+        <input type="radio" name="Seats">10
+        <br>
+        <br>
         <label>Price</label>
         <select required>
             <option></option>
@@ -77,11 +107,13 @@
         <br>
         <details>
             <summary>View T&C's</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero commodi, ex voluptas
-                incidunt animi enim ipsum aperiam quos vitae odio cupiditate officiis voluptatum consequuntur. Iure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero commodi, 
+              ex voluptas odio cupiditate officiis voluptatum consequuntur. Iure.</p>
         </details>
         <br>
-        <label>Full Name</label>
+        <hr>
+        <br>
+        <label>Your Full Name</label>
         <input type="text" required>
         <br>
         <br>
@@ -93,8 +125,20 @@
         <input type="number" minlength="10" maxlength="10" required>
         <br>
         <br>
-        
-        <button style="background-color: red; color: white; padding: 15px 20px;"><b>BOOK NOW</b></button>
+        <label>Payment Option</label>
+        <select required>
+            <option></option>
+            <option>UPI</option>
+            <option>Netbanking</option>
+            <option>Credit/Debit Card</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button style="background-color: red; color: white; padding: 15px 30px; border-radius: 15px; font-style: italic; font-size: 20px;"><b>BOOK NOW</b></button>
+        <br>
+        <br>
+        <hr>
     </form>
 </body>
 
