@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using CSS</title>
 
     <style>
-        h2{
+        h2 {
             text-align: center;
             color: rgb(22, 82, 90);
             font-size: 40px;
         }
-        .myclass{
+
+        .myclass {
             color: chartreuse;
             background-color: black;
+        }
+
+        #myid {
+            color: brown;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #myid2 {
+            color: rgb(14, 61, 61);
+            font-size: 40px;
+        }
+
+        #myclass2{
+            color: darkorange;
+        }
+
+        #myclass3{
+            color: crimson;
         }
     </style>
 
 </head>
+
 <body>
-    <h1 style="font-size: 30px; color: red; text-decoration:underline;">Inline CSS is used to style individual tags only</h1>
+    <h1 style="font-size: 30px; color: red; text-decoration:underline;">Inline CSS is used to style individual tags only
+    </h1>
 
     <h2>Internal CSS is used to style multiple elements at once</h2>
 
     <h2 class="myclass">Name Selectors are used to select elements by their tag name</h2>
 
     <p class="myclass">Class Selectors are used to select elements using their class name</p>
+
+    <h3 id="myid">ID selectors are used to select elements by their id name</h3>
+
+    <p id="myid2" class="myclass2">Some Text</p>
+
+    <h2 class="myclass2 myclass3"> Same Selector Priority</h2>
 </body>
+
 </html>
