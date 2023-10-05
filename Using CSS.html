@@ -29,14 +29,16 @@
             font-size: 40px;
         }
 
-        #myclass2{
-            color: darkorange;
+        #myclass3{
+            color: darkorange !important;
         }
 
-        #myclass3{
+        #myclass2{
             color: crimson;
         }
     </style>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -52,9 +54,11 @@
 
     <h3 id="myid">ID selectors are used to select elements by their id name</h3>
 
-    <p id="myid2" class="myclass2">Some Text</p>
+    <p id="myid2" class="myclass2" style="color: darkgreen;" >Some Text</p>
 
     <h2 class="myclass2 myclass3"> Same Selector Priority</h2>
+
+    <button class="btn">Using External CSS</button>
 </body>
 
 </html>
