@@ -7,15 +7,121 @@
     <title>Contact Form</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 
     <style>
+        .myform{
+            width: 30%;
+            box-sizing: border-box;
+            padding: 40px 40px;
+            border: 2px solid rgb(71, 71, 71);
+            background-color: rgba(255, 255, 255, 0.664);
+            border-radius: 50px;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 97vh;
+            font-family: Comfortaa;
+            /* font-family: Raleway; */
+            background-image: url(phn.jpg);
+            background-position: 50%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .form-title{
+            text-align: center;
+            /* font-family: Comfortaa; */
+            font-family: Raleway;
+            font-size: 40px;
+            margin-bottom: 40px;
+            margin-top: 0px;
+            font-weight: 600;
+        }
+
+        .myinput{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: left;
+            border-style: solid;
+            margin-top: 10px;
+            font-family: Comfortaa;
+        }
+
+        .mybtn{
+            margin-top: 40px;
+            width: 50%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: Comfortaa;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 30px;
+            border-style: hidden;
+            margin-bottom: 0px;
+            transition-duration: 0.8s;
+        }
+
+        .btnhov:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 1px solid black;
+        }
+
+        .help{
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 2px;
+            width: 100%;
+            text-align: left;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            font-family: Comfortaa;
+        }
+
+        label{
+            font-weight: 700
+        }
 
     </style>
 </head>
 
 <body>
 
+    <div class="myform">
 
+        <h3 class="form-title">Contact Us</h3>
+
+        <form action="contact form.html">
+
+            <label>Your Name</label>
+            <input type="text" class="myinput" required>
+
+            <label>Your Email</label>
+            <input type="text" class="myinput" required>
+
+            <label>How can we help you ?</label>
+            <!-- <input type="" class="myinput"> -->
+            <textarea class="help" cols="30" rows="7" required></textarea>
+
+            <div>
+                <button class="mybtn btnhov">Submit</button>
+            </div>
+
+        </form>
+        
+    </div>
 
 </body>
 
