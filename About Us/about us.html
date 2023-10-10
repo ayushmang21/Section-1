@@ -7,28 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
 
     <style>
         .myclass{
             color: white;
-            font-family: Lora;
-            font-weight: 200;
-            font-size: 50px;
+            font-family: Comfortaa;
+            font-weight: 700;
+            margin-bottom: 20px; 
         }
 
         body{
             /* display: flex; */
-            height: 97vh;
+            height: 194vh;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-image: url(https://images.pexels.com/photos/164357/pexels-photo-164357.jpeg);
-            background-size: cover;
-            background-position: 50%;
+            background-size: 100% 100%;
+            background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+            background-image: repeating-linear-gradient(315deg, #28282B 92%, #073AFF00 99%),radial-gradient(160% 154% at 711px -303px, #26282A 0%, #000000FF 15%);
+            /* background-size: cover; */
+            /* background-position:center; */
         }
 
         .founders{
             align-items: center;
+            margin-top: 20px;
+        }
+
+        .about{
+            color: white;
+            font-family: Comfortaa;
+            margin-top: 30px;
+            text-align: center;
+            padding: 30px;
         }
 
     </style>
@@ -37,11 +49,17 @@
 <body>
 
     <div class="myclass">
-        <h1>About Us</h1>
+        <h1 style="font-size: 45px;">About Us</h1>
     </div>
 
     <div class="founders">
-        <img width="600px" src="https://i.pinimg.com/originals/bb/5d/5e/bb5d5e9cc1e868af59dd7555b4c90e3b.jpg" alt="Not Found">
+        <img width="350px" src="https://i.pinimg.com/originals/bb/5d/5e/bb5d5e9cc1e868af59dd7555b4c90e3b.jpg" alt="Not Found">
+    </div>
+
+    <div class="about">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, in vero quidem sapiente, labore magni necessitatibus natus odit accusamus excepturi reiciendis odio, porro laborum facere deserunt incidunt dolore voluptatem ea aliquam! Tenetur doloremque molestias sit nostrum officia quisquam architecto fugit eos, laudantium, cumque vero debitis consequuntur optio nemo nam modi?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corporis quasi cupiditate exercitationem recusandae ullam expedita maxime delectus, culpa ipsam ad facere natus sed, aut aspernatur qui quisquam. Aperiam dolores exercitationem in expedita vero, illo blanditiis. At blanditiis nisi doloremque ullam labore molestiae, repellendus voluptates harum id! Ex qui perferendis, nostrum soluta quis praesentium repellat laudantium ipsa repudiandae, reiciendis et.</p>
     </div>
 
 </body>
