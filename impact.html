@@ -14,7 +14,7 @@
 
     <style>
         nav {
-            background-color: #10753c;
+            background-color: #0e6835;
             overflow: hidden;
             /* align-items: center; */
             /* display: block; */
@@ -44,7 +44,8 @@
         }
 
         .impact {
-            background-color: #10753c;
+            background-color: #0e6835;
+            font-size: larger;
             padding: 10px;
             color: white;
             font-family: Red Hat Display;
@@ -61,8 +62,8 @@
         }
 
         .green {
-            height: 70%;
-            background-color: rgb(14, 104, 53);
+            height: 75%;
+            background-color: #0e6835;
         }
 
         .welcome{
@@ -78,12 +79,42 @@
         .btn{
             font-family: Red Hat Display;
             font-weight: 600;
+            font-size: 15px;
+            background-color: #1a7441;
+            padding: 15px;
+            color: #c5ecd6;
+            width: 35%;
+            border: 2px solid #228a4f;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        
+        .watch_vid{
+            font-family: Red Hat Display;
+            font-weight: 600;
+            font-size: 15px;
             background-color: #0e6835;
             padding: 15px;
-            color: white;
-            width: 30%;
-            border: 1px solid #0e6835;
-            border-radius: 30px;
+            color: #c5ecd6;
+            border: none;
+            margin-left: 40px;
+        }
+
+        .card{
+            width: 20%;
+            border-radius: 10px;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        .card img{
+            width: 100%;
+            border-radius: inherit;
+        }
+
+        .card-grp{
+            display: flex;
+            justify-content: space-around;
         }
 
     </style>
@@ -114,12 +145,36 @@
             <h1 style="margin-top: 0px;">Welcome to Impact</h1>
             <p style="color: rgba(255, 255, 255, 0.6);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eum eligendi nesciunt, porro dolor iure laboriosam in animi? Enim, dolorem.</p>
             <div>
-                <button class="btn">Get Started</button>
+                <button class="btn">Get Started</button> <span> <button class="watch_vid">Watch Video</button> </span>
             </div>
         </div>
 
         <div class="illustation">
             <!-- <img src="sol mindset.svg" alt=""> -->
+        </div>
+
+    </div>
+
+    <div class="card-grp">
+        
+        <div class="card">
+            <img src="" alt="">
+            <h2>Lorem Ipsum</h2>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <h2>Sed ut perspiciatis</h2>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <h2>Magni Dolores</h2>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <h2>Nemo Enim</h2>
         </div>
 
     </div>
