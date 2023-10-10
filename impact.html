@@ -16,9 +16,11 @@
         nav {
             background-color: #10753c;
             overflow: hidden;
-            align-items: center;
-            display: block;
+            /* align-items: center; */
+            /* display: block; */
             float: right;
+            margin-top: -55px;
+            margin-right: 20px;
         }
 
         nav a {
@@ -46,20 +48,42 @@
             padding: 10px;
             color: white;
             font-family: Red Hat Display;
+            margin-left: 20px;
         }
 
         .illustation {
-            width: 30%;
-        }
-        
-        .illustation img {
-            display: flex;
-            width: 90%;
+            width: 20%;
+            justify-content: baseline;
         }
 
-        .green{
-            height: 80%;
-            background-color: #10753c;
+        .illustation img {
+            width: 100%;
+        }
+
+        .green {
+            height: 70%;
+            background-color: rgb(14, 104, 53);
+        }
+
+        .welcome{
+            box-sizing: border-box;
+            width: 40%;
+            margin-left: 15px;
+            margin-top: 50px;
+            font-family: Red Hat Display;
+            color: white;
+            padding: 15px;
+        }
+
+        .btn{
+            font-family: Red Hat Display;
+            font-weight: 600;
+            background-color: #0e6835;
+            padding: 15px;
+            color: white;
+            width: 30%;
+            border: 1px solid #0e6835;
+            border-radius: 30px;
         }
 
     </style>
@@ -86,8 +110,16 @@
             </nav>
         </div>
 
+        <div class="welcome">
+            <h1 style="margin-top: 0px;">Welcome to Impact</h1>
+            <p style="color: rgba(255, 255, 255, 0.6);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eum eligendi nesciunt, porro dolor iure laboriosam in animi? Enim, dolorem.</p>
+            <div>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+
         <div class="illustation">
-            <img src="sol mindset.svg" alt="">
+            <!-- <img src="sol mindset.svg" alt=""> -->
         </div>
 
     </div>
