@@ -18,10 +18,11 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
 
     <style>
+
         .container {
             margin: 0 101.5px;
             padding: 0px 12px;
-
+            height: 451px;
         }
 
         header {
@@ -35,6 +36,7 @@
             font-weight: 700;
             margin-bottom: 20px;
             color: #37373f;
+            margin-top: 0px;
         }
 
         .sub-title {
@@ -46,11 +48,20 @@
             display: flex;
             box-sizing: border-box;
             justify-content: space-between;
+            margin: -48px -12px 0px --12px;
+            width: 1140px;
+            height: 499px;
         }
 
         .content {
-            margin: auto;
-            margin-left: 0px;
+            display: flex;
+            box-sizing: border-box;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            /* margin-left: 0px; */
+            margin-top: 48px;
+            padding: 0px 12px;
         }
 
         .mybtn {
@@ -80,17 +91,6 @@
             height: 100vh;
         }
 
-        /* .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24;
-            height: 32px;
-            width: 32px;
-            color: #ce1212;
-        } */
-
         .section-bg {
             background-color: #eee;
         }
@@ -98,36 +98,93 @@
         .hero {
             padding: 160px 0px 60px 0px;
         }
+
+        .food-pic{
+            box-sizing: border-box;
+            margin-top: 48px;
+            max-width: 100%;
+            padding: 0px 12px;
+            width: 475px;
+        }
+
+        .food-pic img{
+            width: 451px;
+            height: 451px;
+        }
+
+        .navi h1{
+            color: black;
+        }
+
+        .navi a{
+            text-decoration: none;
+        }
+
+        .navbar:hover{
+
+        }
+
+        .top{
+            font-family: Inter;
+        }
+
+
     </style>
 </head>
 
 <body>
 
-    <header>
+    <header class="border-top">
+
+        <div class="navi">
+
+            <a href="yummy.html"><h1>Yummy<span style="color: #ce1212;">.</span></h1></a>
+
+            <nav class="navbar">
+
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Events</a>
+                    <a href="#">Chefs</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Drop Down</a>
+                    <a href="#">Contact</a>
+
+                </nav>
+            </nav>
+
+        </div>
+
     </header>
 
     <section class="hero section-bg">
 
         <div class="container">
+
             <div class="row">
+
                 <div class="content">
 
                     <h1 class="title">ENJOY YOUR HEALTHY<br>DELICIOUS FOOD</h1>
+
                     <p class="sub-title">Sed autem laudantium dolores. Voluptatem itaque ea <br> consequatur eveniet.
-                        Eum quas beatae cumque eum <br> quaerat.</p>
+                                         Eum quas beatae cumque eum <br> quaerat.</p>
 
                     <div>
+
                         <button class="mybtn main-btn">Book a Table</button>
                         <!-- <button class="mybtn main-btn-2"> <span class="material-symbols-outlined">play_circle</span> Watch Video</button> -->
-                        <button class="mybtn main-btn-2"> <span><i class="fi fi-bs-play-circle"
-                                    style="color: #ce1212; font-size: 32px; border-top: 5px;"></i></span> Watch
-                            Video</button>
+                        <button class="mybtn main-btn-2"> <span><i class="fi fi-bs-play-circle"style="color: #ce1212; font-size: 32px; border-top: 5px;"></i></span> Watch Video</button>
+ 
                     </div>
 
                 </div>
 
                 <div class="food-pic">
+                    
                     <img src="food.png" alt="Not Found" style="width: 451px;">
+  
                 </div>
 
             </div>
