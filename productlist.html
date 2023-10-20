@@ -27,7 +27,13 @@
         }
 
         .card-body {
-            background-color: rgba(222, 242, 255, 0.322);
+            /* background-color: rgba(222, 242, 255, 0.322); */
+            transform: translateZ(30px)
+        }
+
+        .card{
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
         }
 
 
@@ -322,8 +328,8 @@
     <script>
 
         VanillaTilt.init(document.querySelectorAll('.card'), {
-            max: 15,
-            speed: 100
+            max: 20,
+            speed: 100,
         });
 
     </script>
