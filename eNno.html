@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eNno</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -64,6 +63,11 @@
             color: #5f687b;
         }
 
+        #header.header-scrolled {
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+        }
+
         .navbar {
             padding: 0;
         }
@@ -94,15 +98,11 @@
             transition: 0.3s;
         }
 
-        .navbar a:hover,
-        .navbar .active,
-        .navbar .active:focus,
-        .navbar li:hover>a {
+        .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
             color: #16df7e;
         }
 
-        .navbar .getstarted,
-        .navbar .getstarted:focus {
+        .navbar .getstarted, .navbar .getstarted:focus {
             padding: 10px 25px;
             margin-left: 30px;
             border-radius: 4px;
@@ -113,8 +113,7 @@
             border: 1px solid #cdd1d9;
         }
 
-        .navbar .getstarted:hover,
-        .navbar .getstarted:focus:hover {
+        .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
             background: #206bfb;
             color: #fff;
             border-color: #206bfb;
@@ -239,6 +238,51 @@
             font-size: 14px;
         }
 
+        .about .content h3 {
+            font-weight: 700;
+            font-size: 32px;
+            color: #5f687b;
+        }
+
+        .about .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about .content ul li {
+            padding-bottom: 10px;
+        }
+
+        .about .content ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: #16df7e;
+        }
+
+        .about .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .counts {
+            padding-top: 0;
+        }
+
+        .counts .counters span {
+            font-size: 48px;
+            display: block;
+            color: #16df7e;
+            font-weight: 700;
+        }
+
+        .counts .counters p {
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+
     </style>
 
 </head>
@@ -259,7 +303,8 @@
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#dropdown">Drop Down &#160 <i class="fa-solid fa-caret-down"></i> </a></li>
+                    <li><a class="nav-link scrollto" href="#dropdown">Drop Down &#160 <i
+                                class="fa-solid fa-caret-down"></i> </a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                 </ul>
@@ -326,32 +371,73 @@
 
     <section id="about" class="about">
         <div class="container">
-  
-          <div class="row">
-            <div class="col-lg-6">
-              <img src="https://bootstrapmade.com/demo/templates/eNno/assets/img/about.png" class="img-fluid" alt="">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="https://bootstrapmade.com/demo/templates/eNno/assets/img/about.png" class="img-fluid"
+                        alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua.
+                    </p>
+                    <ul>
+                        <li> <i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </li>
+                        <li> <i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in
+                            voluptate velit
+                        </li>
+                        <li> <i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
+                    </ul>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-  
+
         </div>
     </section>
 
+    <section id="counts" class="counts">
+        <div class="container">
+
+            <div class="row counters">
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Clients</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Projects</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Hours Of Support</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Hard Workers</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
