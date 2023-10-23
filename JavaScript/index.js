@@ -15,3 +15,5 @@ something = null;
 console.log( myname );
 
 console.log(typeof(myname));
+
+console.log( 123 == '123');
