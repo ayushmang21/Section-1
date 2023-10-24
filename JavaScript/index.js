@@ -24,5 +24,5 @@ console.log( 123 === '123');
 
 console.log( 2 + '2');
 
-console.log(4 ** '3');
+console.log(4 ** 0.5);
 
