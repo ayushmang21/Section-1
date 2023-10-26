@@ -52,11 +52,12 @@
             border-radius: 10px;
             margin-bottom: 20px;
             text-align: center;
-            border-style: dashed;
+            border-style: dotted;
+            font-family: Montserrat;
         }
 
         .myinput:focus{
-            background-color: #80dadd4b;
+            background-color: #8edcdf4b;
         }
 
         .mybtn {
@@ -70,18 +71,19 @@
             font-family: Montserrat;
             font-weight: 550;
             margin-top: 20px;
-            transition-duration: 1s;
+            transition-duration: 0.5s;
             /* box-shadow: 0px 0px 15px 7px rgba(208, 142, 214, 0.904); */
         }
 
         .mybtn:hover{
-            background-color: rgb(7, 17, 102);
+            background-color: rgb(19, 30, 133);
 
         }
 
         label{
             color: rgb(0, 0, 0);
             font-weight: bold;
+            /* margin-bottom: 5px; */
         }
 
     </style>
@@ -97,10 +99,10 @@
         <form>
 
             <label>Email Address</label>
-            <input type="text" class="myinput">
+            <input type="text" class="myinput" required>
 
             <label>Password</label>
-            <input type="password" class="myinput">
+            <input type="password" class="myinput" required>
 
             <div style="text-align: center;">
 
