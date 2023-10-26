@@ -34,7 +34,7 @@ let sum = 0;
 temp = 454;
 
 while (n > 0) {
-    // r = n%10;
+    r = n%10;
     sum = (sum * 10) + n % 10;
     n = n / 10;
 }
@@ -52,7 +52,7 @@ else {
 
 // n1 = 1234;
 // let rev = 0;
-// // let rem = 0;
+// let rem = 0;
 
 // while (n1>0) {
 //     rem = n1 %10;
