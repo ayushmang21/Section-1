@@ -20,7 +20,7 @@ else
 
     for (i = 2; i <= num2 / 2; ++i)
     {
-      if (num2 % i == 0) {
+      if (num2 % i === 0) {
         flag = true;
         break;
       }
