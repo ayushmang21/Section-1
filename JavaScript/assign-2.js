@@ -29,17 +29,22 @@ for (let i = 10; i <= 200; i++)
 
 //-----------------------------------Palindrome---------------------------//
 
-n = 454;
+let n = 454;
 let sum = 0;
-temp = 454;
+let temp = n;
+
+console.log(n);
+console.log(temp);
+console.log(sum);
 
 while (n > 0) {
-    r = n%10;
-    sum = (sum * 10) + n % 10;
-    n = n / 10;
+    let r = n%10;
+    sum = sum * 10 + r;
+    n = parseInt(n / 10);
 }
 console.log(temp);
 console.log(sum);
+console.log(n);
 
 if (temp == sum) {
     console.log('Palindrome');
@@ -68,22 +73,24 @@ console.log(result);
 
 //----------------------------------Armstrong--------------------------------//
 
-function isArmstrong(number) {
-    const digits = number.toString().split('');
-    const order = digits.length;
-    const sum = digits.reduce(
-        (acc, digit) =>
-            acc + Math.pow(parseInt(digit), order), 0);
+// function isArmstrong(number) {
+//     const digits = number.toString().split('');
+//     const order = digits.length;
+//     const sum = digits.reduce(
+//         (acc, digit) =>
+//             acc + Math.pow(parseInt(digit), order), 0);
 
-    if (sum === number) {
-        console.log(
-            number + " is an Armstrong Number");
-    }
-    else {
-        console.log
-            (number + " is not an Armstrong Number");
-    }
-}
+//     if (sum === number) {
+//         console.log(
+//             number + " is an Armstrong Number");
+//     }
+//     else {
+//         console.log
+//             (number + " is not an Armstrong Number");
+//     }
+// }
 
-isArmstrong(9474);
-isArmstrong(520);
+// isArmstrong(9474);
+// isArmstrong(520);
+
+
