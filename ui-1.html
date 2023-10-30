@@ -15,10 +15,23 @@
     <style>
         .search-bar {
             /* background-color: aqua; */
+
         }
 
         .navi {
-            margin-top: -30px;
+            margin-top: -40px;
+        }
+
+        .btn{
+            border-color: black;
+        }
+
+        .search{
+            border-color: black;
+        }
+
+        nav a{
+            text-decoration: none;
         }
     </style>
 
@@ -30,30 +43,26 @@
         <h1>Users</h1>
     </div>
 
-    <div class="container w-100 search-bar justify-content-start">
-        
-        <div class="input-group search">
-            <button class="btn"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            <input type="text" class="" placeholder="Search Users">
+    <div class="container w-100 search-bar align-items-center justify-content-center">
+
+        <div class="input-group search justify-content-start w-25">
+            <button class="btn bg-white"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            <input type="text" class="form-control " placeholder="Search Users">
         </div>
 
         <div class="container navi">
             <nav class="nav justify-content-end">
-                <a class="nav-link active" href="#">Active link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Disabled link</a>
+                <a class="nav-link" href="#">Reputation</a>
+                <a class="nav-link active" href="#">New Users</a>
+                <a class="nav-link" href="#">Voters</a>
+                <a class="nav-link" href="#">Editors</a>
+                <a class="nav-link" href="#">Moderators</a>
             </nav>
         </div>
 
     </div>
 
-    <!-- <div class="container ">
-        <nav class="nav justify-content-end">
-          <a class="nav-link active" href="#">Active link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Disabled link</a>
-        </nav>
-    </div> -->
+    
 
 
 
