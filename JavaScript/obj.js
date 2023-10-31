@@ -47,3 +47,5 @@ console.log(SmartphoneList[0]);
 SmartphoneList[0].Model = 'Z21';
 
 console.log(SmartphoneList);
+
+console.log(SmartphoneList[0].Colors[2]);
