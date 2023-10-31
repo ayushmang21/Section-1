@@ -26,3 +26,6 @@ console.log(p);
 const mails = ['mmm@yahoo.com', 'abc@gmail.com', 'xyz@gmail.com', 'jjj@hotmail.om']
 const e = mails.filter((m) => { return m.includes('gmail')})
 console.log(e);
+
+// const disc 
+console.log(prices.map((p) => { return p*0.9}));
