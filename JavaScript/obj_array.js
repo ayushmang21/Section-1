@@ -54,3 +54,37 @@ console.log(color);
 
 console.log('----------------------------------------------------------------------------------------');
 
+const search = 'Samsung';
+console.log(SmartphoneList.filter((phone) => { return phone.Brand.includes(search)}));
+console.log('----------------------------------------------------------------------------------------');
+console.log(SmartphoneList.filter((phone) => { return phone.Brand === search}));
+
+console.log('--------------------------------------------------------------------------------------------------------------------------------------------------------------------');
+
+const userList = [
+    {
+        name : 'ramu',
+        email : 'ramu@gmail.com',
+        password : '12djsh',
+        address : 'Lucknow'
+    },
+    {
+        name : 'raju',
+        email : 'raju@gmail.com',
+        password : 'miow908',
+        address : 'Delhi'
+    },
+    {
+        name : 'shamu',
+        email : 'shamu@yahoo.com',
+        password : '12djsh',
+        address : 'Lucknow'
+    },
+    {
+        name : 'kaliya',
+        email : 'kaliya@yahoo.com',
+        password : 'n83h78',
+        address : 'Delhi'
+    }
+]
+
