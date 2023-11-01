@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,
         100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
@@ -27,22 +26,22 @@
         .head.h1 {
             margin: 0px;
         }
+        
+        .search {
+            border-color: black;
+        }
 
         .search-bar {
             font-family: Raleway;
             font-weight: 500;
         }
 
-        .navi {
-            margin-top: -40px;
-        }
-
         .btn {
             border-color: black;
         }
 
-        .search {
-            border-color: black;
+        .navi {
+            margin-top: -40px;
         }
 
         .nav-link {
@@ -54,7 +53,7 @@
             width: 110px;
             object-fit: cover;
             border-radius: 50%;
-            float: left;
+            /* float: left; */
             padding: 15px;
         }
 
@@ -62,9 +61,36 @@
             border: 10px;
         }
 
-        .card{
-            background-color: rgba(221, 221, 255, 0.178);
+        .card {
+            background-color: #9292ff2d;
+            /* background-color: aqua; */
             border: none;
+        }
+
+        .card:hover {
+            outline: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0px 0px 7px 3px #ddddff;
+            /* box-shadow: 0px 0px 7px 3px #0000ff; */
+        }
+
+        .card-body {
+            /* float: left; */
+            /* align-items: baseline; */
+            /* justify-content: flex-end; */
+            text-align: center;
+        }
+
+        .form-control{
+            border-color: black;
+        }
+
+        .btn1{
+            color: blue;
+            border: 2px solid blue;
+            font-size: 12px;
+            background-color: white;
+            text-align: center;
         }
     </style>
 
@@ -76,11 +102,11 @@
         <h1>Users</h1>
     </div>
 
-    <div class="container w-100 search-bar align-items-center justify-content-center">
+    <div class="search-bar container w-100 align-items-center justify-content-center">
 
-        <div class="input-group search justify-content-start w-25">
+        <div class="search input-group justify-content-start w-25">
             <button class="btn bg-white"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            <input type="text" class="form-control " placeholder="Search Users">
+            <input type="text" class="form-control" placeholder="Search Users">
         </div>
 
         <div class="container navi">
@@ -109,6 +135,8 @@
                     <div class="card-body">
                         <h3>Leleh Nicholes</h3>
                         <p>Troy,MI</p>
+                        <button class="btn btn1 rounded-pill fw-bold py-1">Clothes</button>
+                        <button>Stem</button>
                     </div>
 
                 </div>
@@ -120,10 +148,12 @@
                 <div class="card">
 
                     <img class="card-img-left my-img"
-                        src="https://media.licdn.com/dms/image/D4E03AQHL0ySzj70Z_Q/profile-displayphoto-shrink_800_800/0/1686753304929?e=2147483647&v=beta&t=Z-w9YzzV9SuUQxQGAretSBM5pcLKwNZVn_vtWhpgVIg"
-                        alt="">
-                    <h3>Leleh Nicholes</h3>
-                    <p>Troy,MI</p>
+                        src="https://media.licdn.com/dms/image/D4E03AQHL0ySzj70Z_Q/profile-displayphoto-shrink_800_800/0/1686753304929?e=2147483647&v=beta&t=Z-w9YzzV9SuUQxQGAretSBM5pcLKwNZVn_vtWhpgVIg"alt="">
+
+                    <div class="card-body">
+                        <h3>Leleh Nicholes</h3>
+                        <p>Troy,MI</p>
+                    </div>
 
                 </div>
             </div>
@@ -135,8 +165,11 @@
 
                     <img class="card-img-left my-img"
                         src="https://th.bing.com/th/id/OIP.jTq9dRQIna8bmChwSoJ50gAAAA?pid=ImgDet&rs=1" alt="">
-                    <h3>Leleh Nicholes</h3>
-                    <p>Troy,MI</p>
+
+                    <div class="card-body">
+                        <h3>Leleh Nicholes</h3>
+                        <p>Troy,MI</p>
+                    </div>
 
                 </div>
             </div>
@@ -148,8 +181,11 @@
 
                     <img class="card-img-left my-img"
                         src="https://cdn.theorg.com/5f16b125-5844-4c84-8daf-4400cfa267fb_medium.jpg" alt="">
-                    <h3>Leleh Nicholes</h3>
-                    <p>Troy,MI</p>
+
+                    <div class="card-body">
+                        <h3>Leleh Nicholes</h3>
+                        <p>Troy,MI</p>
+                    </div>
 
                 </div>
             </div>
@@ -161,8 +197,11 @@
 
                     <img class="card-img-left my-img"
                         src="https://th.bing.com/th/id/OIP.XjDToVaHspE0v6Oke3nCDgHaKb?pid=ImgDet&rs=1" alt="">
-                    <h3>Leleh Nicholes</h3>
-                    <p>Troy,MI</p>
+
+                    <div class="card-body">
+                        <h3>Leleh Nicholes</h3>
+                        <p>Troy,MI</p>
+                    </div>
 
                 </div>
             </div>
@@ -173,10 +212,12 @@
                 <div class="card">
 
                     <img class="card-img-left my-img"
-                        src="https://th.bing.com/th/id/R.24e910fde1252b306776da7d9e0bf067?rik=Ip3r%2b4anqgeJiA&pid=ImgRaw&r=0"
-                        alt="">
-                    <h3>Leleh Nicholes</h3>
-                    <p>Troy,MI</p>
+                        src="https://th.bing.com/th/id/R.24e910fde1252b306776da7d9e0bf067?rik=Ip3r%2b4anqgeJiA&pid=ImgRaw&r=0"alt="">
+
+                    <div class="card-body">
+                        <h3>Leleh Nicholes</h3>
+                        <p>Troy,MI</p>
+                    </div>
 
                 </div>
             </div>
