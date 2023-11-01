@@ -59,7 +59,7 @@ console.log(SmartphoneList.filter((phone) => { return phone.Brand.includes(searc
 console.log('----------------------------------------------------------------------------------------');
 console.log(SmartphoneList.filter((phone) => { return phone.Brand === search}));
 
-console.log('--------------------------------------------------------------------------------------------------------------------------------------------------------------------');
+console.log('-------------------------------------------------------------------userList-------------------------------------------------------------------------------------------------');
 
 const userList = [
     {
@@ -70,7 +70,7 @@ const userList = [
     },
     {
         name : 'raju',
-        email : 'raju@gmail.com',
+        email : 'ramu@gmail.com',
         password : 'miow908',
         address : 'Delhi'
     },
@@ -88,3 +88,22 @@ const userList = [
     }
 ]
 
+const users = userList.filter((e) => { return e.email === 'ramu@gmail.com'});
+console.log(users);
+
+console.log('----------------------------------------------------------------------------------------');
+
+const live = userList.filter((l) => { return l.address ==='Delhi'});
+console.log(live);
+
+console.log('----------------------------------------------------------------------------------------');
+
+const emails = userList.map((e) => { return e.email});
+console.log(emails);
+
+console.log('----------------------------------------------------------------------------------------');
+
+const yaho = userList.filter((y) => { return y.email.includes('@yahoo.com')})
+console.log(yaho);
+
+console.log('----------------------------------------------------------------------------------------');
