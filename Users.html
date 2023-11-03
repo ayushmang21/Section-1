@@ -36,8 +36,10 @@
             font-weight: 500;
         }
 
-        .btn {
-            border-color: black;
+        .btn2 {
+            border-color: grey;
+            border-right: none;
+            margin-right: -10px;
         }
 
         .navi {
@@ -47,13 +49,18 @@
         .nav-link {
             color: black;
         }
+        
+        .nav-link:hover {
+            background-color: rgba(68, 27, 155, 0.589);
+            color: white;
+            border-radius: 7px;
+        }
 
         .my-img {
             height: 110px;
             width: 110px;
             object-fit: cover;
             border-radius: 50%;
-            /* float: left; */
             padding: 15px;
         }
 
@@ -62,35 +69,32 @@
         }
 
         .card {
-            background-color: #9292ff2d;
-            /* background-color: aqua; */
+            background-color: #a67dd63a;
             border: none;
         }
 
         .card:hover {
             outline: 1px solid gray;
             border-radius: 10px;
-            box-shadow: 0px 0px 7px 3px #ddddff;
-            /* box-shadow: 0px 0px 7px 3px #0000ff; */
+            box-shadow: 0px 0px 7px 3px #a67dd63a;
         }
 
         .card-body {
-            /* float: left; */
-            /* align-items: baseline; */
-            /* justify-content: flex-end; */
             text-align: center;
         }
 
         .form-control{
-            border-color: black;
+            border-color: gray;
+            border-radius: 2px;
         }
 
         .btn1{
-            color: blue;
-            border: 2px solid blue;
+            color: rgb(162, 87, 247);
+            border: 2px solid rgb(162, 87, 247);
             font-size: 12px;
             background-color: white;
             text-align: center;
+            margin-top: 7px;
         }
     </style>
 
@@ -105,8 +109,8 @@
     <div class="search-bar container w-100 align-items-center justify-content-center">
 
         <div class="search input-group justify-content-start w-25">
-            <button class="btn bg-white"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            <input type="text" class="form-control" placeholder="Search Users">
+            <button class="btn btn2 bg-white"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            <input type="text" class="form-control py-2" placeholder="Search Users">
         </div>
 
         <div class="container navi">
@@ -121,7 +125,7 @@
 
     </div>
 
-    <div class="container mt-5 card-grp">
+    <div class="container my-5 card-grp">
         <div class="row">
 
             <!-- 1 -->
